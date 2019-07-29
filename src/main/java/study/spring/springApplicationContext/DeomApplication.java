@@ -20,7 +20,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import study.spring.out.OutService;
 
 @SpringBootApplication
-@EnableAsync   // 2019.07.28 EvnetHandler 의 비동기 학습을 위해 추가
+//@EnableAsync   // 2019.07.28 EvnetHandler 의 비동기 학습을 위해 추가
 public class DeomApplication {
 
 	@Autowired
@@ -61,7 +61,7 @@ public class DeomApplication {
 					@Override
 					@Order(1)
 					public ApplicationRunner get() {
-						return args1 -> System.out.println("Functional Bean Definition");
+						return args1 -> System.out.println("DeomApplication (addInitializer): Functional Bean Definition");
 					}
 				});
 			}

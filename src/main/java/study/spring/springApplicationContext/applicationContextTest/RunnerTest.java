@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class RunnerTest implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("============ApplicationRunner");
+        System.out.println("RunnerTest : ============ApplicationRunner");
     }
 }
 
@@ -20,7 +20,7 @@ public class RunnerTest implements ApplicationRunner {
 class TestApplicationRunner2 implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("============ApplicationRunner2");
+        System.out.println("RunnerTest : ============ApplicationRunner2");
     }
 }
 
@@ -29,6 +29,6 @@ class TestApplicationRunner2 implements ApplicationRunner {
 class TestCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("============CommandLineRunner1");
+        System.out.println("RunnerTest : ============CommandLineRunner1");
     }
 }
