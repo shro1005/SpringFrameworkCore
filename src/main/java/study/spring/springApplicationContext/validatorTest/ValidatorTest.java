@@ -5,7 +5,7 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 /**
- * ValidatorTest
+ * ValidatorTest   2019.07.30 Validator 추상화 공부
  */
 public class ValidatorTest implements Validator {
 
