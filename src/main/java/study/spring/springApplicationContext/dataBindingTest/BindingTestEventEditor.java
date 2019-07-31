@@ -17,7 +17,7 @@ public class BindingTestEventEditor extends PropertyEditorSupport{
     @Override
     public String getAsText() {
         BindingTestEvent event = (BindingTestEvent)getValue();
-        return event.toString();
+        return Integer.toString(event.getId());
     }
 
     @Override

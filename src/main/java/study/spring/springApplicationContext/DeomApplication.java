@@ -23,8 +23,8 @@ import study.spring.out.OutService;
 //@EnableAsync   // 2019.07.28 EvnetHandler 의 비동기 학습을 위해 추가
 public class DeomApplication {
 
-	@Autowired
-	OutService outService;
+	// @Autowired
+	// OutService outService;
 
 	/* 2019.07.28 messageSource 공부 */
 	@Bean
@@ -56,7 +56,7 @@ public class DeomApplication {
 			
 			@Override
 			public void initialize(GenericApplicationContext ctx) {
-				ctx.registerBean(OutService.class);
+				// ctx.registerBean(OutService.class);
 				ctx.registerBean(ApplicationRunner.class, new Supplier<ApplicationRunner>() {
 					@Override
 					@Order(1)

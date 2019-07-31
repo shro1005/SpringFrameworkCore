@@ -20,6 +20,6 @@ public class BindingTestEventController {
     @GetMapping("event/{event}")
     public String getEvent(@PathVariable BindingTestEvent event) {
         System.out.println("BindingTest : event -> " + event);
-        return event.toString();
+        return Integer.toString(event.getId());
     }
 }
