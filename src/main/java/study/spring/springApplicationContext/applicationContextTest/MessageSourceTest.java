@@ -26,9 +26,9 @@ public class MessageSourceTest implements ApplicationRunner {
         // System.out.println(messageSource.getClass());
         // while (true) {
             System.out.println("MessageSourceTest : "+messageSource.getMessage("greeting", new String[] { "kyun" }, Locale.KOREA));
-            System.out.println("MessageSourceTest : "+messageSource.getMessage("greeting", new String[] { "kyun" }, Locale.getDefault()));
+            System.out.println("MessageSourceTest : "+messageSource.getMessage("greeting", new String[] { "kyun" }, Locale.US));
             Thread.sleep(1000);
-        // }s
+        // }
     }
 
 }
