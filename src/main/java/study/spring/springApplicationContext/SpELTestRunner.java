@@ -5,6 +5,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Component;
  * SpEL은 모든 Spring Project 전반에 걸쳐 사용될 수 있다.
  */
 @Component
+@Order(9)
 public class SpELTestRunner implements ApplicationRunner {
 
     @Value("#{1 + 1}")   //#사용 : 이렇게 Value 어노테이션에 #과 함께 입력한 식들을 EL표현식으로 파싱해서 결과값을 해당 변수에 넣어준다.
