@@ -1,17 +1,16 @@
 package study.spring.springApplicationContext.springAOP;
 
-import java.lang.annotation.Target;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 /**
  * ProxyEventService    2019.08.15  spring AOP (프록시 AOP ) 공부 - 간략한 프록시 패턴의 AOP 공부
- *  Target class에 코드 변경없이 새로운 기능들을 추가하기 위해 감쌀 프록시
+ *  Target class에 코드 변경없이 새로운 기능들을 추가하기 위해 감쌀 프록시 
+ *  (프록시는 대신, 대리인이라는 의미를 가지고 있다.)
  */
-@Component
-@Primary
+// @Component      //2019.08.21 Spring AOP 학습을 위해 빈등록 삭제
+// @Primary
 public class ProxyEventService implements EventService {
 
     @Autowired

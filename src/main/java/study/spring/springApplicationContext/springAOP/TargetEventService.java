@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 public class TargetEventService implements EventService{
     // long begin = System.currentTimeMillis();
 
+    @LogPerf   // 2019.08.21  Spring AOP - 어노테이션을 활용한 Spring AOP 활용 학습
     @Override
     public void createEvent() {
         try {
@@ -23,6 +24,7 @@ public class TargetEventService implements EventService{
         // System.out.println(System.currentTimeMillis() - begin);
     }
 
+    @LogPerf   // 2019.08.21  Spring AOP - 어노테이션을 활용한 Spring AOP 활용 학습
     @Override
     public void publishEvent() {
         try {

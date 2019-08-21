@@ -23,6 +23,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId> <!--해당되는 라이브러리에서 의존성들을 보장한다. -->
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>  <!--2019.08.21.  Spring AOP를 사용하기 위해 의존성 추가 -->
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
